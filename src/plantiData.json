@@ -1,0 +1,103 @@
+[
+  {
+    "id": "hj1",
+    "name": "Acoro",
+    "nameLarge": "Acorus gramineus",
+    "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcm9nbxU7Lrv256S6ttrAx4AckayXy6OCzYw&usqp=CAU",
+    "uso": "Es adecuada para decorar pequeños estanques y acuarios",
+    "levels": {
+      "care": "hard",
+      "temperature": "medium",
+      "lighExposure": "medium",
+      "irrigation": "high"
+    },
+    "provenance": "zonas humedad del sureste Asiatico",
+    "description": "Las hojas son de color verde oscuro, estan surcadas a lo largo por estrias amarillentas y parten directamente del suelo, careciendo de peciolo y limbos definidos",
+    "substrate": "de textura suave y composición predominantemente organica, ha de mantenerse humedo en todo momento. En primavera-verano debe abonarse cada 15 dias",
+    "multiplication": {
+      "station": "spring",
+      "technique": "division de rizoma"
+    }
+  }
+  ,
+  {
+    "id": "hj2",
+    "name": "Aeonium",
+    "nameLarge": "Aeonium arboreum",
+    "urlImage": "https://clubsuculentas.com/wp-content/uploads/2019/08/aeonium-arboreum-860x538.jpg",
+    "uso": "Se puede colocar junto a otros cactus y suculentas",
+    "levels": {
+      "care": "low",
+      "temperature": "high",
+      "lighExposure": "high",
+      "irrigation": "low"
+    },
+    "provenance": "originaria de Canarias y Marruecos",
+    "description": "Parece un arbol con rosetas. Su tronco tiene unos dibujos similares a la piel de una serpiente. A finales de la primavera se forma una pirámide de florecitas amarillas en forma de estrella",
+    "substrate": "tolera cualquier tipo de drenaje pero necesita que se le agregue arena. Una cubierta de piedrecitas ayuda al drenaje superficial",
+    "multiplication": {
+      "station": "anyone",
+      "technique": "rosetas foliales u hojas individuales"
+    }
+  },
+  {
+    "id": "hj2",
+    "name": "Azalea",
+    "OtherNames": {
+      "scientificName": "Azalea Indica",
+      "otherNames": [
+        "Rhododendron simsii"
+      ]
+    },
+    "urlImage": "https://images.hola.com/imagenes/decoracion/20220215204589/como-cuidar-azaleas-il/1-50-987/como-cuidar-azaleas-01m-m.jpg?tx=w_360",
+    "uso": "Agradece los lugares bien iluminados y soporta el sol directo",
+    "levels": {
+      "care": "medium",
+      "temperature": "medium",
+      "lighExposure": "medim",
+      "irrigation": "high"
+    },
+    "provenance": "China",
+    "description": "Plante de flor de porte medio-bajo,arbustiva y leñosa. Presenta un follaje compacto formado por hojas pequeñas y ovaladas. En el extremo de las ramas se desarrollan las flores, con forma de embudo y en colores muy variados",
+    "substrate": [
+      "turba",
+      "mantillo",
+      "tierra de brezo",
+      "arena"
+    ],
+    "fertile": {
+      "eachDay": 15,
+      "station": "winter"
+    },
+    "multiplication": {
+      "station": "summer",
+      "technique": "esquejes semileños"
+    }
+  },
+  {
+    "id": "",
+    "name": "beloperone",
+    "names": {
+      "scientificName": "beloperone guttata",
+      "otherNames": [
+        "Corazón",
+        "lúpulo de interior"
+      ]
+    },
+    "urlImage": "https://media.casaegiardino.it/images/2011/03/beloperone-justicia.jpg",
+    "uso": "No es muy exigente en lo que a temperatura respecta, de modo que puede estar en el interior o exterior",
+    "levels": {
+      "care": "medium",
+      "temperature": "medium",
+      "lighExposure": "high",
+      "irrigation": "medium"
+    },
+    "provenance": "méxico",
+    "description": "Hermosa vivaz sufruticosa - de tallos leñosos en la base y herbáceos en la ápice. Esta formado por varios tallos en los que se desarrolla hojas de color verde pálido, óvaladas y pubescentes",
+    "substrate": ["humus de lombris","arena"],
+    "multiplication": {
+      "station": "",
+      "technique": ""
+    }
+  }
+]
