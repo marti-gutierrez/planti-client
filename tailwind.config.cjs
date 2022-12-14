@@ -3,6 +3,9 @@ module.exports = {
   content: ["index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        "search-icon": "url('./assets/icons8-search-24.png')",
+      },
       colors: {
         primary: {
           50: "#E8EBE2",

@@ -1,5 +1,11 @@
+import Header from "./container/Header";
+
 function App(): JSX.Element {
-  return <h1 className="bg-red-100">This is React</h1>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;
