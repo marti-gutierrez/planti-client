@@ -1,7 +1,11 @@
 import { AiOutlineMenu } from "react-icons/ai";
 import Navbar from "../components/Navbar";
 
-export default function Menu({ setOpenModal }) {
+interface Props {
+  setOpenModal: () => void;
+}
+
+export default function Menu({ setOpenModal }: Props) {
   const onToggleModal = () => setOpenModal((prevState) => !prevState);
   return (
     <div>

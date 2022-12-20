@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply w-full h-full bg-primary-100
+  }
+  h1 {
+    @apply text-4xl font-light
+  }
+  h3 {
+    @apply text-secondary-200 font-medium text-lg capitalize;
+  }
+  h4 {
+    @apply text-xl font-semibold capitalize
+  }
+  img {
+    @apply w-full h-full object-cover;
+  }
+}
+
 @layer components {
   .linkActive {
     @apply border-primary-300 border-b-4 font-semibold;
