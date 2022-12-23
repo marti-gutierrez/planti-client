@@ -4,13 +4,9 @@ import Menu from "./Menu";
 import Modal from "./Modal";
 import PopupNav from "./PopupNav";
 import { useState } from "react";
-import { useSearch } from "../hooks/useSearch";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-  const { state, stateUpdaters } = useSearch();
-  const { searchState } = state;
-  const { setSearchState } = stateUpdaters;
   const [openModal, setOpenModal] = useState(false);
   return (
     <>
@@ -18,7 +14,7 @@ export default function Header() {
         <Link to="/" className="hover:bg-primary-50 rounded-full">
           <GiPlantSeed className="w-6 h-6 text-secondary-200 " />
         </Link>
-        <Search searchState={searchState} setSearchState={setSearchState} />
+        <Search />
         <Menu setOpenModal={setOpenModal} />
         <Link to="/garden" className="hover:bg-primary-50 rounded-full">
           <GiFlowerPot className="w-6 h-6 text-secondary-200" />

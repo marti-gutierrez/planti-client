@@ -5,21 +5,31 @@ import Trees from "../pages/Trees";
 import NewPlant from "../pages/NewPlant";
 import { PagePlant } from "../container/PagePlant";
 import { HashRouter, Routes, Route } from "react-router-dom";
+import { LoginPage } from "../pages/LoginPage";
+import { LogoutPage } from "../pages/LogoutPage";
+import {
+  PlantsContext,
+  PlantsContextProvider,
+} from "../context/search/PlantState";
 
 function App(): JSX.Element {
   return (
     <>
       <HashRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/plants" element={<Plants />}>
-            <Route path=":slug" element={<PagePlant />} />
-          </Route>
-          <Route path="/trees" element={<Trees />} />
-          <Route path="/newPlant" element={<NewPlant />} />
-          <Route path="*" element={<p>Not found</p>} />
-        </Routes>
+        <PlantsContextProvider>
+          <Header />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/plants" element={<Plants />}>
+              <Route path=":slug" element={<PagePlant />} />
+            </Route>
+            <Route path="/trees" element={<Trees />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/logout" element={<LogoutPage />} />
+            <Route path="/newPlant" element={<NewPlant />} />
+            <Route path="*" element={<p>Not found</p>} />
+          </Routes>
+        </PlantsContextProvider>
       </HashRouter>
     </>
   );

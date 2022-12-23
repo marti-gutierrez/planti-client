@@ -36,4 +36,12 @@ const routes = [
     to: "/newPlant",
     text: "Nueva Planta",
   },
+  {
+    to: "/login",
+    text: "Log in",
+  },
+  {
+    to: "/logout",
+    text: "Log out",
+  },
 ];

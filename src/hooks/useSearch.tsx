@@ -1,6 +1,6 @@
 import plantiData from "../plantiData.json";
 import { useState } from "react";
-import { DataApi } from "../interfaces/types";
+import { DataApi } from "../interfaces/API";
 
 export function useSearch() {
   const dataPlanti: DataApi[] = plantiData;

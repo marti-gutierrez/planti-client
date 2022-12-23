@@ -2,7 +2,7 @@ import { TbShovel, TbTemperatureMinus, TbCloud } from "react-icons/tb";
 import { FaTemperatureHigh, FaTemperatureLow, FaSun } from "react-icons/fa";
 import { RiSunCloudyLine } from "react-icons/ri";
 import { IoWaterOutline, IoWater } from "react-icons/io5";
-import { levels } from "../interfaces/types";
+import { levels } from "../interfaces/API";
 
 export function Levels({ level, type }: levels) {
   return (

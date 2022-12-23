@@ -1,8 +1,9 @@
 import { MdOutlineBookmarkAdd } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { levels } from "../interfaces/types";
+import { levels } from "../interfaces/API";
 
 interface Props {
+  id: string;
   namePlant: string;
   care: string;
   urlImage: string;
@@ -13,6 +14,7 @@ interface Props {
 
 export function CardPlant({
   namePlant,
+  id,
   care,
   urlImage,
   uso,
@@ -21,7 +23,7 @@ export function CardPlant({
 }: Props) {
   return (
     <div className="w-[300px] bg-white rounded-lg border border-primary-200">
-      <Link to={`${namePlant}`}>
+      <Link to={id}>
         <section className="flex items-center gap-2 px-4 py-3">
           <div className=" flex justify-center items-center w-9 h-9 bg-secondary-200 rounded-full">
             <div className="w-7 h-7 bg-primary-50 rounded-full"></div>

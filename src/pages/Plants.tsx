@@ -1,21 +1,26 @@
 import { CardPlant } from "../components/CardPlant";
 import { ListPlants } from "../container/ListPlants";
-import { useSearch } from "../hooks/useSearch";
-import { DataApi } from "../interfaces/types";
+import { DataApi } from "../interfaces/API";
 import { Levels } from "../components/Levels";
-import { levels } from "../interfaces/types";
+import { levels } from "../interfaces/API";
 import { Outlet } from "react-router-dom";
+import { useContext, useEffect } from "react";
+import { PlantsContext } from "../context/search/PlantState";
+import Data from "../plantiData.json";
 
 export default function Plants(): JSX.Element {
-  const { state } = useSearch();
-  const { plantFound } = state;
+  const { getPlants, plants } = useContext(PlantsContext);
+  useEffect(() => {
+    getPlants();
+  }, []);
   return (
     <main>
       <Outlet />
-      <ListPlants plantFound={plantFound}>
+      <ListPlants plantFound={plants}>
         {(plant: DataApi) => (
           <CardPlant
             key={plant.name}
+            id={plant.id}
             namePlant={plant.name}
             care={plant.levels[0].level}
             urlImage={plant.urlImage}

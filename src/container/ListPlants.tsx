@@ -1,4 +1,4 @@
-import { DataApi } from "../interfaces/types";
+import { DataApi } from "../interfaces/API";
 
 interface Props {
   plantFound: DataApi[];
