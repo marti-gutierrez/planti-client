@@ -23,7 +23,11 @@ module.exports = {
         warning: "#F2D326",
         danger: "#FF8560",
       },
+      clipPath: {
+        myPolygon: "polygon(35% 0, 100% 0, 100% 100%, 0 100%)",
+        polygonPhone: "polygon(0 0,0 100%,100% 0)",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-clip-path")],
 };

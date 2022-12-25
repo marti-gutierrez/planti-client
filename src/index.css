@@ -15,13 +15,14 @@
   h4 {
     @apply text-xl font-semibold capitalize
   }
-  img {
-    @apply w-full h-full object-cover;
-  }
 }
 
 @layer components {
   .linkActive {
     @apply border-primary-300 border-b-4 font-semibold;
+  }
+  .contact::before {
+    @apply z-10 absolute block w-full h-full bg-primary-100 top-0 left-0;
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%);
   }
 }
